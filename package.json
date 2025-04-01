@@ -1,0 +1,36 @@
+{
+    "name": "@nixjs23n6/link-staking-cron",
+    "version": "1.0.0",
+    "description": "Cronjob to stake LINK into a staking pool",
+    "main": "dist/stake-cron.js",
+    "scripts": {
+        "start": "ts-node src/stake-cron.ts",
+        "build": "tsc",
+        "dev": "ts-node-dev --respawn src/stake-cron.ts",
+        "dev-v2": "ts-node-dev --respawn src/stake-cron-websocket.ts",
+        "lint": "eslint . --ext .ts"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "node-cron": "^3.0.3",
+        "pino": "^9.6.0",
+        "pino-pretty": "^13.0.0",
+        "table": "^6.9.0",
+        "viem": "^2.7.0"
+    },
+    "devDependencies": {
+        "@types/dotenv": "^8.2.0",
+        "@types/node": "^20.11.0",
+        "@types/node-cron": "^3.0.11",
+        "eslint": "^8.56.0",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.3.3"
+    },
+    "author": "nghinv",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nixjs/ts-validator-schema.git"
+    },
+    "license": "MIT"
+}
