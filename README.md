@@ -32,6 +32,9 @@ RPC_URL=https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID
 
 # Use websocket
 RPC_WEBSOCKET_URL=wss://mainnet.infura.io/ws/v3/YOUR_INFURA_PROJECT_ID  # Switch to WebSocket to reduce connection time and receive data in near realtime.
+
+# If use multi providers
+RPC_MULTI_PROVIDERS=https://eth.llamarpc.com,https://eth-mainnet.public.blastapi.io,https://1rpc.io/eth,https://eth.merkle.io
 ```
 > Use Alchemy, Infura, QuickNode with premium package, or local node to reduce network latency
 - RPC can use: [alchemy](https://www.alchemy.com/) or [infura](https://developer.metamask.io/key/active-endpoints) or [quicknode](https://www.quicknode.com/)
