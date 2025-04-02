@@ -20,11 +20,19 @@ pnpm i
 
 3. **Create a .env file in the root directory:**
 ```env
-PRIVATE_KEY=your_private_key_here #Your private key
-STAKING_CONTRACT_ADDRESS=0xBc10f2E862ED4502144c7d632a3459F49DFCDB5e #Chainlink contract address
-INTERVAL_MS=200 #Interval times
-INFURA_PROJECT_ID=YOUR_INFURA_PROJECT_ID # Switch to WebSocket to reduce connection time and receive data in near realtime.
+PRIVATE_KEY=your_private_key_here
+STAKING_CONTRACT_ADDRESS=0xBc10f2E862ED4502144c7d632a3459F49DFCDB5e
+LINK_CONTRACT_ADDRESS=0x514910771af9ca656af840dff83e8264ecf986ca
+
+# Use http()
+INTERVAL_MS=200
+RPC_URL=https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID
+
+# Use websocket
+RPC_WEBSOCKET_URL=wss://mainnet.infura.io/ws/v3/YOUR_INFURA_PROJECT_ID  # Switch to WebSocket to reduce connection time and receive data in near realtime.
 ```
+> Use Alchemy, Infura, QuickNode with premium package, or local node to reduce network latency
+- RPC can use: [alchemy](https://www.alchemy.com/) or [infura](https://developer.metamask.io/key/active-endpoints) or [quicknode](https://www.quicknode.com/)
 - [Contract address of the Community Pool](https://etherscan.io/address/0xBc10f2E862ED4502144c7d632a3459F49DFCDB5e)
 - [How to export an account's private key](https://support.metamask.io/configure/accounts/how-to-export-an-accounts-private-key/)
 
