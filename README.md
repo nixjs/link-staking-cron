@@ -42,12 +42,14 @@ pnpm dev # use RPC
 pnpm dev-v2 # use Websocket RPC
 ```
 
-## Node
+## Note
 - Ensure your wallet has enough ETH for gas and LINK for staking.
 
 - Check the contract's requirements (e.g., approval) if staking fails.
 
 - Running every 200 milliseconds may lead to high RPC usage.
+
+> Some public RPCs may log your data, so be careful when handling sensitive information.
 
 - Allow to config interval time (Recommend: 200ms - 300ms):
 ```bash

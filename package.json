@@ -8,6 +8,7 @@
         "build": "tsc",
         "dev": "ts-node-dev --respawn src/stake-cron.ts",
         "dev-v2": "ts-node-dev --respawn src/stake-cron-websocket.ts",
+        "dev-v3": "ts-node-dev --respawn src/stake-cron-multi-provider.ts",
         "lint": "eslint . --ext .ts"
     },
     "dependencies": {
