@@ -45,6 +45,7 @@ RPC_MULTI_PROVIDERS=https://eth.llamarpc.com,https://eth-mainnet.public.blastapi
 ```bash
 pnpm dev # use RPC
 pnpm dev-v2 # use Websocket RPC
+pnpm dev-v3 # use multi RPC
 ```
 
 ## Note
